@@ -1,0 +1,29 @@
+body {
+    height: 100%; 
+    font-family: Arial, sans-serif;
+}
+.form-container {
+    max-width: 550px;
+    margin:80px auto;
+    padding-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-left: 20px;
+    
+}
+.form-container input, .form-container label, .form-container select {
+    margin-bottom: 10px;
+    padding: 2px;
+}
+.high-contrast {
+    background-color: black;
+    color: white;
+}
+.form-container button {
+    margin-top: 10px;
+}
+.style-one {
+    background-color: rgba(120, 118, 238, 0.877);
+    color: black;
+}

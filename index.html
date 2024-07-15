@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales - Bootstrap</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <!-- Bootstrap JS y CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyK8MytdRSQ/0Ddt95H3yVYYuH0FV3Kx5K" crossorigin="anonymous"></script>   
+    <script src="./script.js" defer></script>  
+</head>
+
+<body>
+    <div class="form-container" id="form-container">
+        <h2 class="text-center mb-4">Formulario de Datos Personales</h2>
+        <form id="personal-data-form">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>   
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" required>
+            </div>    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>   
+            <div class="form-group">
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>    
+            <div class="form-group">
+                <label for="residencia">País de Residencia:</label>
+                <select class="form-control" id="residencia" name="residencia" required>
+                    <option value="0">Selecciona...</option>
+                    <option value="1">Argentina</option>
+                    <option value="2">Brasil</option>
+                    <option value="3">Chile</option>
+                    <option value="4">Uruguay</option>
+                    <option value="5">Bolivia</option>
+                    <option value="6">Peru</option>
+                    <option value="7">Venezuela</option>
+                    <option value="8">Colombia</option>
+                    <option value="9">Ecuador</option>
+                </select>
+            </div>    
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <button type="button" class="btn btn-primary" onclick="applyStyleOne()">Estilo Uno</button>
+            <button type="button" class="btn btn-dark ml-2" onclick="applyHighContrast()">Estilo de Alto Contraste</button>
+        </div>
+    </div>
+
+</body>
+</html>    
